@@ -1,0 +1,44 @@
+{% extends 'appsettings/base.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'productpage/css/productpage.css' %}">
+{% endblock %}
+{% block content %}
+    <div id = difer>
+        <div class="wrapper"> <a href="{% url 'clothes1' %}">Верхній одяг</a> </div>
+        <div class="wrapper"> <a href="{% url 'clothes2' %}">Одяг</a> </div>
+        <div class="wrapper"> <a href="{% url 'shoes' %}">Взуття</a> </div>
+    </div>
+    <div id = main>
+        <div class = 'd1'>
+            <img src ="{% static 'productpage/img/vh1.jpg' %}" alt="11">
+            <p>Набор осенней одежды "вай вася"</p>
+            <a href="{% url '1' %}" id = p1>10040$</a>
+        </div>
+    
+        <div id = d2>
+            <img src="{% static 'productpage/img/vh2.jpg' %}" alt="22">
+            <p>Зеленый кардиганный свитер<br></p>
+            <a href="{% url '2' %}" id = p2>12300$</a>
+        </div>
+    
+        <div id = d3>
+            <img src="{% static 'productpage/img/vh3.jpg' %}" alt="33">
+            <p>Куртка "камень Остров" Patch Program <br> </p>
+            <a href="{% url '3' %}" id = p3>333333$</a>
+            
+        </div>
+    
+    
+        <div id = d4>
+            <img src="{% static 'productpage/img/vh4.jpg' %}" alt="44">
+            <p>Курта CP Company винтаж без линз</p>
+            <a href="{% url '4' %}" id = p4>1498$</a>
+       </div>
+    
+        <div id = d5>
+            <img src="{% static 'productpage/img/vh5.jpg' %}" alt="55">
+            <p>куртака "вай брат сам такую ношу"<br> </p>
+            <a href="{% url '5' %}" id = p5>6700$</a>
+    </div>
+{% endblock %}

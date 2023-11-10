@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'appsettings/css/base.css' %}">
+    {% block links %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <button class = 'button1'>
+            <a href="{% url 'main' %}">Головна</a>
+        </button>
+        <button class = 'button1'>
+            <a href="{% url 'contactpage' %}">Контакти</a>
+        </button>
+        <button class = 'button1'>
+            <a href="{% url 'register' %}">Регiстрацiя</a>
+        </button>
+        <button class = 'button1'>
+            <a href="{% url 'productpage' %}">Товари</a>
+        </button>
+        <button class = 'button1'>
+            <a href="{% url 'shoppingcardpage' %}">Корзина</a>
+        </button>
+        <button class = 'button1'>
+            <a href="{% url 'logout' %}">Вихід</a>
+        </button>
+    <div class = 'user1'>
+        {% if request.user.is_authenticated %}
+        <h3>Здравствуйте {{user.username}}</h3>
+        {% else %}
+        <h3>Вы не зарегестрированы!</h3>
+        {% endif %}
+    </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

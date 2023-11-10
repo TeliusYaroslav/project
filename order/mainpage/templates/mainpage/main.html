@@ -1,0 +1,24 @@
+{% extends 'appsettings/base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'mainpage/css/main.css' %}">
+{% endblock %}
+{% block content %}
+    <div class = 'image1'>
+        <img id = i1 class = 'slide' src="{% static 'mainpage/img/1.jpg' %}" alt="1">
+        <img id = 22 class = 'slide' src="{% static 'mainpage/img/2.jpg' %}" alt="2">
+        <img id = 33 class = 'slide' src="{% static 'mainpage/img/3.jpg' %}" alt="3">
+    </div>
+    <!-- <footer>
+         <button class = 'linkbt'><a href="{% url 'productpage' %}" class="centered-link">Товары на ваш вкус</a></button>
+    </footer>   -->
+    <div class="textM" id='span1'>
+        Мережа магазинів
+    </div>
+    <div class="textM" id="span2">
+        Успiх
+    </div>
+
+    
+{% endblock %}
+mainpage/img/1.jpg

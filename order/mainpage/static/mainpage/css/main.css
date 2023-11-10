@@ -1,0 +1,147 @@
+/* .text1 {
+    background-image: url('/static/mainpage/img/bgdiv3.jpg');
+    height: 250px;
+    margin-top: 50px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background-size: cover;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+} */
+
+
+
+.image1 {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 902.5px;
+    width: 1400px;
+    left: 0px;
+    z-index: 1;
+} 
+
+/* .image1 {
+ position: relative;
+ width: 300px;
+ height: 200px;
+ overflow: hidden;
+} */
+
+
+/* 
+p {
+    height: 7em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30; 
+    font-weight: bold;
+} */
+img{
+  height: 902.5px;
+  width: 1400px;  
+}
+
+/* .conteinerM{
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  top: 50%;
+  left: 20%;
+  margin: 50px;
+  z-index: 100;
+  background-color: white;
+  text-align: center;
+  /* color: black; */
+  /* width: 500px;
+  height: 300px; */
+  /* border: 1px solid black; */
+
+#span1{
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+#span2{
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 57%;
+  left: 35%;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.textM{
+  margin: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@keyframes changeSlide {
+  0%, 100% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+.image1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide:nth-child(1) {
+  animation: changeSlide 9s infinite;
+}
+.slide:nth-child(2) {
+  animation: changeSlide 9s infinite 3s; 
+}
+.slide:nth-child(3) {
+  animation: changeSlide 9s infinite 6s; 
+}
+
+
+footer {
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.linkbt {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.centered-link {
+  color: white;
+}
+

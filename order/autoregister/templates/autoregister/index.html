@@ -1,0 +1,16 @@
+{% extends 'appsettings/base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'autoregister/css/style.css' %}">
+{% endblock %}
+{% block content %}
+<div>
+    <form method="post">
+        {% csrf_token %}
+        {{ log_error }}
+            <input type="text" placeholder="Name" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button id = 'id2'>Signup</a></button>
+    </form>
+</div>
+{% endblock %}
